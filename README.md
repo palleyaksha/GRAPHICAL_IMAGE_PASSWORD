@@ -18,7 +18,7 @@ SignupLogin is a web-based authentication system that utilizes an image-based lo
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/signuplogin.git
+   git clone https://github.com/palleyaksha/signuplogin.git
    ```
 2. Move to the project directory:
    ```bash

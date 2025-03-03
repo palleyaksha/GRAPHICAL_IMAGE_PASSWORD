@@ -1,4 +1,4 @@
-# SignupLogin Authentication System
+# GRAPHICAL_IMAGE_PASSWORD
 
 ## Overview
 SignupLogin is a web-based authentication system that utilizes an image-based login mechanism. Users upload an image during signup, which is segmented into a 3x3 grid. The order of the segments is stored as a graphical password. During login, the user must rearrange the jumbled segments to match the original order to gain access.

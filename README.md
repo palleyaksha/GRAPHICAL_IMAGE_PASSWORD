@@ -1,51 +1,39 @@
-SignupLogin Authentication System
+# SignupLogin Authentication System
 
-Overview
-
+## Overview
 SignupLogin is a web-based authentication system that utilizes an image-based login mechanism. Users upload an image during signup, which is segmented into a 3x3 grid. The order of the segments is stored as a graphical password. During login, the user must rearrange the jumbled segments to match the original order to gain access.
 
-Features
+## Features
+- **User Signup**: Users register with a username, email, password, and an image.
+- **Graphical Password**: The uploaded image is divided into a 3x3 grid, and users select the order of segments.
+- **Login Authentication**: The system verifies the image order entered during login with the stored order.
+- **Session Management**: Users remain logged in until they choose to logout.
+- **Secure Authentication**: Prevents unauthorized access by requiring correct image segment order.
 
-User Signup: Users register with a username, email, password, and an image.
+## Tech Stack
+- **Frontend**: HTML, CSS, Bootstrap
+- **Backend**: PHP, MySQL
+- **Database**: MySQL
 
-Graphical Password: The uploaded image is divided into a 3x3 grid, and users select the order of segments.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/signuplogin.git
+   ```
+2. Move to the project directory:
+   ```bash
+   cd signuplogin
+   ```
+3. Set up a MySQL database and import the provided SQL schema.
+4. Update `connection.php` with your database credentials.
+5. Start a local server using XAMPP, WAMP, or another PHP server.
+6. Open the application in a browser:
+   ```
+   http://localhost/signuplogin/index.php
+   ```
 
-Login Authentication: The system verifies the image order entered during login with the stored order.
-
-Session Management: Users remain logged in until they choose to logout.
-
-Secure Authentication: Prevents unauthorized access by requiring correct image segment order.
-
-Tech Stack
-
-Frontend: HTML, CSS, Bootstrap
-
-Backend: PHP, MySQL
-
-Database: MySQL
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/palleyaksha/signuplogin.git
-
-Move to the project directory:
-
-cd signuplogin
-
-Set up a MySQL database and import the provided SQL schema.
-
-Update connection.php with your database credentials.
-
-Start a local server using XAMPP, WAMP, or another PHP server.
-
-Open the application in a browser:
-
-http://localhost/signuplogin/index.php
-
-File Structure
-
+## File Structure
+```
 signuplogin/
 ├── auth_image.php          # Authentication logic
 ├── connection.php          # Database connection
@@ -60,16 +48,17 @@ signuplogin/
 ├── images/                 # Stores uploaded and segmented images
 │   ├── background.jpg      # Background image
 │   ├── grid_x_y_hash.jpg   # Segmented images
+```
 
-Usage
+## Usage
+1. **Signup**: Users upload an image and select the segment order.
+2. **Login**: Users rearrange the jumbled image to match their stored order.
+3. **Dashboard**: Successful login redirects users to `welcome.php`.
 
-Signup: Users upload an image and select the segment order.
 
-Login: Users rearrange the jumbled image to match their stored order.
 
-Dashboard: Successful login redirects users to welcome.php.
 
-Screenshots
+## Screenshots
 
 1. Setup and Installation:
 
@@ -104,11 +93,9 @@ Screenshots
    ![image](https://github.com/user-attachments/assets/10835630-89f4-4a78-a13f-158ad82ed033)
 
 
-Contribution
-
+## Contribution
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
-License
-
+## License
 This project is licensed under the MIT License.
 
